@@ -1,7 +1,10 @@
+body{
+    color: white;
+}
 h1{
     text-align: center;
     font-style: italic;
-    color: black;
+    color: white;
     font-size: 30px;
     letter-spacing: 7px;
     word-spacing: 10px;
@@ -11,7 +14,9 @@ h1{
 
 }
 body{
-    background-color: beige;
+    background-image: url(Imagenes/ZoKRjTG.jpg);
+    background-attachment: fixed;
+    background-position: center;
 }
 li{
     display: inline-block;
