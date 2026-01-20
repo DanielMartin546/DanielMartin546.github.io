@@ -82,7 +82,7 @@ article{
     border-radius: 15px;
 }
 article:hover{
-    background-color: #222;
+    background-color: #1f1f1f;
     transform: scale(1.025);
 }
 footer{
@@ -107,7 +107,7 @@ article.fab2 h3{
 }
 article p{
     font-family: sans-serif;
-    color: #ddd;
+    color: #d3d3d3;
     text-align: left;
     line-height: 1.6;
 }
