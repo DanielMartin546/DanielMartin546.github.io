@@ -1,7 +1,5 @@
-/* Audi — importa la base y sobreescribe el color de acento */
 @import url("../marca-base.css");
 
-/* Color de Audi: rojo */
 h1 { color: #e0001a; }
 h3 { color: #e0001a; }
 .stat-box { border-left-color: #e0001a; }
