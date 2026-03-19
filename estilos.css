@@ -1,7 +1,3 @@
-/* ============================================
-   CLÁSICOS DEL DTM — Estilos principales
-   ============================================ */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,8 +11,6 @@ body {
     margin: auto;
     font-family: sans-serif;
 }
-
-/* ---- Tipografía ---- */
 
 h1 {
     font-family: "Bitcount Grid Single", sans-serif;
@@ -54,8 +48,6 @@ a {
     color: white;
 }
 
-/* ---- Header ---- */
-
 header {
     display: flex;
     flex-direction: column;
@@ -64,8 +56,6 @@ header {
     border-bottom: 1px solid #2a2a2a;
     margin-bottom: 10px;
 }
-
-/* ---- Botón hamburguesa ---- */
 
 .nav-toggle {
     display: none;
@@ -80,8 +70,6 @@ header {
     margin-bottom: 8px;
     font-family: "Bitcount Grid Single", sans-serif;
 }
-
-/* ---- Navegación principal ---- */
 
 nav ol {
     display: flex;
@@ -125,8 +113,6 @@ nav ul a:hover {
     margin-bottom: 4px;
 }
 
-/* ---- Imagen hero (logo DTM) ---- */
-
 .hero {
     display: flex;
     justify-content: center;
@@ -141,8 +127,6 @@ nav ul a:hover {
     display: block;
     margin: 0 auto;
 }
-
-/* ---- Sección Fabricantes ---- */
 
 .fabricantes-lista {
     display: flex;
@@ -209,8 +193,6 @@ article.fab2 .fab-texto p {
     text-align: inherit;
 }
 
-/* ---- Footer ---- */
-
 footer {
     display: flex;
     align-items: center;
@@ -227,8 +209,6 @@ footer {
     width: 22px;
     vertical-align: middle;
 }
-
-/* ---- Silo: breadcrumb ---- */
 
 .breadcrumb {
     display: flex;
@@ -256,8 +236,6 @@ footer {
     color: white;
 }
 
-/* ---- Silo: introducción ---- */
-
 .silo-intro {
     max-width: 800px;
     margin: 0 auto 30px;
@@ -268,8 +246,6 @@ footer {
     font-size: 18px;
     line-height: 1.8;
 }
-
-/* ---- Silo: contenido en prosa ---- */
 
 .silo-prose {
     max-width: 740px;
@@ -303,8 +279,6 @@ footer {
     line-height: 1.85;
     color: #d3d3d3;
 }
-
-/* ---- Silo: navegación entre niveles ---- */
 
 .silo-section-nav {
     display: flex;
@@ -342,11 +316,6 @@ footer {
     margin: 20px 0;
 }
 
-
-/* ============================================
-   RESPONSIVE — MÓVIL (max-width: 480px)
-   ============================================ */
-
 @media (max-width: 480px) {
 
     body {
@@ -369,12 +338,10 @@ footer {
         font-size: 20px;
     }
 
-    /* Menú hamburguesa visible en móvil */
     .nav-toggle {
         display: block;
     }
 
-    /* Nav colapsado por defecto */
     nav ol {
         display: none;
         flex-direction: column;
@@ -386,7 +353,6 @@ footer {
         margin-bottom: 8px;
     }
 
-    /* Nav visible cuando tiene clase .open */
     nav ol.open {
         display: flex;
     }
@@ -410,12 +376,10 @@ footer {
         display: block;
     }
 
-    /* Imagen hero más pequeña */
     .hero img {
         width: 200px;
     }
 
-    /* Fabricantes apilados en columna */
     article.fab,
     article.fab2 {
         flex-direction: column;
@@ -446,7 +410,6 @@ footer {
         font-size: 14px;
     }
 
-    /* Silo en columna única */
     .silo-prose-section h3 {
         font-size: 20px;
     }

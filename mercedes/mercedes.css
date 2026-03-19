@@ -1,7 +1,5 @@
-/* Mercedes — importa la base y sobreescribe el color de acento */
 @import url("../marca-base.css");
 
-/* Color de Mercedes: plata */
 h1 { color: #c0c0c0; }
 h3 { color: #c0c0c0; }
 .stat-box { border-left-color: #c0c0c0; }

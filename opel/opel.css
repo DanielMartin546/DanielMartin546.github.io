@@ -1,7 +1,5 @@
-/* Opel — importa la base y sobreescribe el color de acento */
 @import url("../marca-base.css");
 
-/* Color de Opel: amarillo/naranja */
 h1 { color: #f5a800; }
 h3 { color: #f5a800; }
 .stat-box { border-left-color: #f5a800; }

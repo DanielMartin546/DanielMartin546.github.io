@@ -1,7 +1,5 @@
-/* BMW — importa la base y sobreescribe el color de acento */
 @import url("../marca-base.css");
 
-/* Color de BMW: azul */
 h1 { color: #1c69d4; }
 h3 { color: #1c69d4; }
 .stat-box { border-left-color: #1c69d4; }

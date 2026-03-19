@@ -1,7 +1,3 @@
-/* ============================================
-   CLÁSICOS DEL DTM — CSS base páginas de marca
-   ============================================ */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -20,13 +16,10 @@ a {
     text-decoration: none;
     color: white;
 }
-
-/* ---- Tipografía ---- */
-
 h1 {
     font-family: "Bitcount Grid Single", sans-serif;
     text-align: center;
-    color: yellow;        /* cada marca sobreescribe este color en su propio CSS */
+    color: yellow; 
     font-size: 75px;
     font-variant: small-caps;
     letter-spacing: 3px;
@@ -40,7 +33,6 @@ h2 {
     margin: 36px 0 20px;
     color: white;
 }
-
 h3 {
     font-family: "Bitcount Grid Single", sans-serif;
     font-size: 24px;
@@ -53,9 +45,6 @@ p {
     color: #c8c8c8;
     line-height: 1.75;
 }
-
-/* ---- Header ---- */
-
 header {
     display: flex;
     flex-direction: column;
@@ -85,8 +74,6 @@ header {
     opacity: 0.7;
 }
 
-/* ---- Botón hamburguesa móvil ---- */
-
 .nav-toggle-marca {
     display: none;
     background: none;
@@ -98,8 +85,6 @@ header {
     cursor: pointer;
     font-family: "Bitcount Grid Single", sans-serif;
 }
-
-/* ---- Breadcrumb ---- */
 
 .breadcrumb {
     display: flex;
@@ -128,8 +113,6 @@ header {
     color: white;
 }
 
-/* ---- Links de navegación entre marcas ---- */
-
 .marca-nav-links {
     display: flex;
     gap: 20px;
@@ -153,8 +136,6 @@ header {
     background-color: #1a1a1a;
 }
 
-/* ---- Banner ---- */
-
 .banner {
     width: 100%;
     max-height: 400px;
@@ -163,8 +144,6 @@ header {
     display: block;
     margin-bottom: 10px;
 }
-
-/* ---- Historia: texto + stats ---- */
 
 .historia-flex {
     display: flex;
@@ -212,8 +191,6 @@ header {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-
-/* ---- Coches: grid de tarjetas ---- */
 
 .coches-grid {
     display: flex;
@@ -264,8 +241,6 @@ header {
     font-family: "Bitcount Grid Single", sans-serif;
 }
 
-/* ---- Pilotos ---- */
-
 .pilotos-lista {
     display: flex;
     flex-direction: column;
@@ -315,8 +290,6 @@ header {
     margin-bottom: 8px;
 }
 
-/* ---- Palmarés ---- */
-
 .palmares-row {
     display: flex;
     flex-wrap: wrap;
@@ -362,8 +335,6 @@ header {
     margin-top: 2px;
 }
 
-/* ---- Footer ---- */
-
 footer {
     display: flex;
     align-items: center;
@@ -393,11 +364,6 @@ footer a:hover {
     vertical-align: middle;
 }
 
-
-/* ============================================
-   RESPONSIVE — MÓVIL (max-width: 480px)
-   ============================================ */
-
 @media (max-width: 480px) {
 
     body {
@@ -417,8 +383,6 @@ footer a:hover {
     h3 {
         font-size: 18px;
     }
-
-    /* Header en columna */
     .header-top {
         flex-wrap: wrap;
         justify-content: center;
@@ -440,14 +404,10 @@ footer a:hover {
         font-size: 13px;
         padding: 8px 0;
     }
-
-    /* Banner más pequeño */
     .banner {
         max-height: 180px;
         object-position: center 30%;
     }
-
-    /* Historia en columna */
     .historia-flex {
         flex-direction: column;
         gap: 20px;
@@ -468,8 +428,6 @@ footer a:hover {
     .stat-box .stat-num {
         font-size: 26px;
     }
-
-    /* Coches en columna */
     .coches-grid {
         flex-direction: column;
     }
@@ -481,8 +439,6 @@ footer a:hover {
     .coche-card img {
         height: 160px;
     }
-
-    /* Pilotos más compactos */
     .piloto-card {
         gap: 12px;
         padding: 14px;
@@ -496,8 +452,6 @@ footer a:hover {
     .piloto-info h3 {
         font-size: 18px;
     }
-
-    /* Palmarés con scroll horizontal */
     .palmares-row {
         flex-wrap: nowrap;
         overflow-x: auto;
@@ -524,14 +478,12 @@ footer a:hover {
         font-size: 11px;
     }
 
-    /* Botón hamburguesa visible */
     .nav-toggle-marca {
         display: block;
         align-self: flex-end;
         margin: 6px 0;
     }
 
-    /* Nav de marca colapsada */
     #marcaNav {
         display: none;
         width: 100%;

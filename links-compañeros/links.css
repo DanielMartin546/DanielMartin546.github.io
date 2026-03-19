@@ -29,7 +29,6 @@ a {
     color: white;
 }
 
-/* --- Grid de tarjetas --- */
 .enlaces-grid {
     display: flex;
     flex-wrap: wrap;
@@ -75,7 +74,6 @@ a {
     color: #888;
 }
 
-/* --- Footer --- */
 footer {
     display: flex;
     align-items: center;
@@ -93,7 +91,6 @@ footer a {
     font-size: 16px;
 }
 
-/* --- Responsive --- */
 @media (max-width: 480px) {
     body {
         width: 95%;
