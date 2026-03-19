@@ -1,116 +1,482 @@
-body{
+/* ============================================
+   CLÁSICOS DEL DTM — Estilos principales
+   ============================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
     color: white;
     background-color: black;
     width: 80%;
     margin: auto;
+    font-family: sans-serif;
 }
-h1,h2,h3,h4{
-    font-family: "Bitcount Grid Single";
-}
-article{
-    font-size: 0;
-}
-h1{
+
+/* ---- Tipografía ---- */
+
+h1 {
+    font-family: "Bitcount Grid Single", sans-serif;
     text-align: center;
     color: yellow;
     font-size: 80px;
     font-variant: small-caps;
     word-spacing: 5px;
     letter-spacing: 2px;
+    padding: 10px 0;
 }
-h2{
+
+h2 {
+    font-family: "Bitcount Grid Single", sans-serif;
     text-align: center;
     font-size: 45px;
+    margin: 30px 0 20px;
 }
-h3{
+
+h3 {
+    font-family: "Bitcount Grid Single", sans-serif;
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
+    margin-bottom: 10px;
 }
-nav{
-    font-size: 0;
-}
-li{
-    display: inline-block;
-    font-family: "Bitcount Grid Single";
-    width: calc(100%/2);
-    padding: 0;
-    margin: auto;
-    text-align: center;
-    font-size: 16px;
-    vertical-align: top;
-    list-style: none;
-}
-ul{
-    text-align: center;
-    margin: auto;
-}
-ol{
-    font-size: 0;
-    text-align: center;
-    margin: auto;
-    list-style: none;
-}
-p{
+
+p {
     font-size: 17px;
+    color: #d3d3d3;
+    line-height: 1.7;
 }
-a{
+
+a {
     text-decoration: none;
     color: white;
 }
-.logo-facebook{
-    width: 20px;
+
+/* ---- Header ---- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 10px;
+    border-bottom: 1px solid #2a2a2a;
+    margin-bottom: 10px;
 }
-.titulolista{
-    font-size: 50px;
+
+/* ---- Botón hamburguesa ---- */
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: 2px solid yellow;
+    border-radius: 6px;
+    color: yellow;
+    font-size: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-bottom: 8px;
+    font-family: "Bitcount Grid Single", sans-serif;
 }
-img{
-    width: calc(80%/4);
-    vertical-align: middle;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 20px;
+
+/* ---- Navegación principal ---- */
+
+nav ol {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 100%;
+    gap: 40px;
 }
-article{
+
+nav > ol > li {
+    flex: 0 1 auto;
     text-align: center;
-    font-size: 0;
-    clear: both;
-    margin-bottom: 20px;
-    display: block;
-    overflow: auto;
-    padding: 25px;
-    transition: all 0.3s ease;
-    border-radius: 15px;
+    font-family: "Bitcount Grid Single", sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
 }
-article:hover{
-    background-color: #1f1f1f;
-    transform: scale(1.025);
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 6px;
 }
-footer{
-    clear: both;
-}
-img.fab{
-    float: left;
-    width: 250px;
-    margin-right: 30px;
-}
-img.fab2{
-    clear: left;
-    float: right;
-    width: 250px;
-    margin-left: 30px;
-}
-article.fab h3{
-    text-align: left;
-}
-article.fab2 h3{
-    text-align: right;
-}
-article p{
+
+nav ul li,
+nav ul a {
     font-family: sans-serif;
+    font-size: 15px;
     color: #d3d3d3;
-    text-align: left;
-    line-height: 1.6;
 }
-article.fab2 p{
+
+nav ul a:hover {
+    color: yellow;
+}
+
+.titulolista {
+    font-size: 42px;
+    color: yellow;
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* ---- Imagen hero (logo DTM) ---- */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.hero img {
+    width: 340px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ---- Sección Fabricantes ---- */
+
+.fabricantes-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 40px;
+}
+
+.fabricantes-lista a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+article.fab,
+article.fab2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+article.fab2 {
+    flex-direction: row-reverse;
+}
+
+article.fab:hover,
+article.fab2:hover {
+    background-color: #1a1a1a;
+    transform: scale(1.02);
+}
+
+article.fab img,
+article.fab2 img {
+    width: 220px;
+    height: 160px;
+    object-fit: contain;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.fab-texto {
+    flex: 1;
+}
+
+article.fab .fab-texto {
+    text-align: left;
+}
+
+article.fab2 .fab-texto {
     text-align: right;
+}
+
+article.fab .fab-texto h3,
+article.fab2 .fab-texto h3 {
+    text-align: inherit;
+    margin-bottom: 8px;
+}
+
+article.fab .fab-texto p,
+article.fab2 .fab-texto p {
+    text-align: inherit;
+}
+
+/* ---- Footer ---- */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px 0;
+    margin-top: 30px;
+    border-top: 1px solid #2a2a2a;
+    font-size: 14px;
+    color: #d3d3d3;
+}
+
+.logo-facebook {
+    width: 22px;
+    vertical-align: middle;
+}
+
+/* ---- Silo: breadcrumb ---- */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 15px;
+    color: #d3d3d3;
+    padding: 14px 0;
+    flex-wrap: wrap;
+}
+
+.breadcrumb a {
+    color: yellow;
+}
+
+.breadcrumb a:hover {
+    opacity: 0.75;
+}
+
+.breadcrumb .sep {
+    color: #555;
+}
+
+.breadcrumb .current {
+    color: white;
+}
+
+/* ---- Silo: introducción ---- */
+
+.silo-intro {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.silo-intro p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* ---- Silo: contenido en prosa ---- */
+
+.silo-prose {
+    max-width: 740px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.silo-prose-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.silo-prose-section:last-child {
+    border-bottom: none;
+}
+
+.silo-prose-section h3 {
+    font-family: "Bitcount Grid Single", sans-serif;
+    font-size: 26px;
+    color: yellow;
+    text-align: left;
+}
+
+.silo-prose-section p {
+    font-size: 16px;
+    line-height: 1.85;
+    color: #d3d3d3;
+}
+
+/* ---- Silo: navegación entre niveles ---- */
+
+.silo-section-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 40px 0 20px;
+}
+
+.silo-nav-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #1a1a1a;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    color: yellow;
+    font-family: "Bitcount Grid Single", sans-serif;
+    font-size: 18px;
+    transition: background-color 0.2s;
+}
+
+.silo-nav-link:hover {
+    background-color: #2a2800;
+}
+
+.silo-img {
+    width: 100%;
+    border-radius: 12px;
+    max-height: 350px;
+    object-fit: cover;
+    margin: 20px 0;
+}
+
+
+/* ============================================
+   RESPONSIVE — MÓVIL (max-width: 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+
+    body {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 38px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+        padding: 8px 0;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin: 20px 0 14px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* Menú hamburguesa visible en móvil */
+    .nav-toggle {
+        display: block;
+    }
+
+    /* Nav colapsado por defecto */
+    nav ol {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
+        background-color: #111;
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 8px;
+    }
+
+    /* Nav visible cuando tiene clase .open */
+    nav ol.open {
+        display: flex;
+    }
+
+    nav > ol > li {
+        flex: none;
+        width: 100%;
+        text-align: left;
+        padding: 10px 16px;
+        border-bottom: 1px solid #2a2a2a;
+    }
+
+    .titulolista {
+        font-size: 22px;
+    }
+
+    nav ul li,
+    nav ul a {
+        font-size: 16px;
+        padding: 4px 0;
+        display: block;
+    }
+
+    /* Imagen hero más pequeña */
+    .hero img {
+        width: 200px;
+    }
+
+    /* Fabricantes apilados en columna */
+    article.fab,
+    article.fab2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+        gap: 14px;
+    }
+
+    article.fab img,
+    article.fab2 img {
+        width: 130px;
+        height: 100px;
+    }
+
+    article.fab .fab-texto,
+    article.fab2 .fab-texto {
+        text-align: center;
+    }
+
+    article.fab .fab-texto h3,
+    article.fab2 .fab-texto h3 {
+        text-align: center;
+    }
+
+    article.fab .fab-texto p,
+    article.fab2 .fab-texto p {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    /* Silo en columna única */
+    .silo-prose-section h3 {
+        font-size: 20px;
+    }
+
+    .silo-prose-section p {
+        font-size: 15px;
+    }
+
+    .silo-section-nav {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .silo-nav-link {
+        text-align: center;
+        justify-content: center;
+        font-size: 16px;
+        padding: 10px 16px;
+    }
+
+    .silo-intro p {
+        font-size: 15px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 8px;
+        padding: 16px 0;
+        text-align: center;
+    }
+
 }

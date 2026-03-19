@@ -1,0 +1,571 @@
+/* ============================================
+   CLÁSICOS DEL DTM — CSS base páginas de marca
+   ============================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: white;
+    background-color: black;
+    width: 80%;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ---- Tipografía ---- */
+
+h1 {
+    font-family: "Bitcount Grid Single", sans-serif;
+    text-align: center;
+    color: yellow;        /* cada marca sobreescribe este color en su propio CSS */
+    font-size: 75px;
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    padding: 16px 0 10px;
+}
+
+h2 {
+    font-family: "Bitcount Grid Single", sans-serif;
+    text-align: center;
+    font-size: 42px;
+    margin: 36px 0 20px;
+    color: white;
+}
+
+h3 {
+    font-family: "Bitcount Grid Single", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: yellow;
+}
+
+p {
+    font-size: 16px;
+    color: #c8c8c8;
+    line-height: 1.75;
+}
+
+/* ---- Header ---- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid yellow;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 0 0;
+    gap: 20px;
+}
+
+.header-logo {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.header-dtm-logo {
+    width: 80px;
+    height: 60px;
+    object-fit: contain;
+    opacity: 0.7;
+}
+
+/* ---- Botón hamburguesa móvil ---- */
+
+.nav-toggle-marca {
+    display: none;
+    background: none;
+    border: 2px solid yellow;
+    border-radius: 6px;
+    color: yellow;
+    font-size: 20px;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-family: "Bitcount Grid Single", sans-serif;
+}
+
+/* ---- Breadcrumb ---- */
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #c8c8c8;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.breadcrumb a {
+    color: yellow;
+}
+
+.breadcrumb a:hover {
+    opacity: 0.7;
+}
+
+.breadcrumb .sep {
+    color: #444;
+}
+
+.breadcrumb .current {
+    color: white;
+}
+
+/* ---- Links de navegación entre marcas ---- */
+
+.marca-nav-links {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 0 12px;
+    width: 100%;
+}
+
+.marca-nav-links a {
+    color: #c8c8c8;
+    font-family: "Bitcount Grid Single", sans-serif;
+    font-size: 16px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    transition: color 0.2s;
+}
+
+.marca-nav-links a:hover {
+    color: yellow;
+    background-color: #1a1a1a;
+}
+
+/* ---- Banner ---- */
+
+.banner {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 0 0 12px 12px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ---- Historia: texto + stats ---- */
+
+.historia-flex {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin: 20px 0 30px;
+}
+
+.historia-texto {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.historia-stats {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 200px;
+}
+
+.stat-box {
+    background-color: #111;
+    border: 1px solid #2a2a2a;
+    border-left: 3px solid yellow;
+    border-radius: 8px;
+    padding: 14px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-box .stat-num {
+    font-family: "Bitcount Grid Single", sans-serif;
+    font-size: 36px;
+    color: yellow;
+    line-height: 1;
+}
+
+.stat-box .stat-label {
+    font-size: 13px;
+    color: #c8c8c8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ---- Coches: grid de tarjetas ---- */
+
+.coches-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0 30px;
+}
+
+.coche-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    overflow: hidden;
+    flex: 1 1 280px;
+    max-width: 360px;
+    transition: transform 0.2s;
+}
+
+.coche-card:hover {
+    transform: translateY(-5px);
+}
+
+.coche-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.coche-card-body {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.coche-card-body h3 {
+    text-align: left;
+    margin: 0;
+}
+
+.coche-card-body .years {
+    font-size: 13px;
+    color: yellow;
+    font-family: "Bitcount Grid Single", sans-serif;
+}
+
+/* ---- Pilotos ---- */
+
+.pilotos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 20px 0 30px;
+}
+
+.piloto-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background-color: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.piloto-card:hover {
+    transform: translateX(4px);
+}
+
+.piloto-numero {
+    font-family: "Bitcount Grid Single", sans-serif;
+    font-size: 48px;
+    color: yellow;
+    line-height: 1;
+    min-width: 60px;
+    text-align: center;
+}
+
+.piloto-info {
+    flex: 1;
+}
+
+.piloto-info h3 {
+    text-align: left;
+    color: white;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.piloto-info .piloto-titulo {
+    font-size: 13px;
+    color: yellow;
+    font-family: "Bitcount Grid Single", sans-serif;
+    margin-bottom: 8px;
+}
+
+/* ---- Palmarés ---- */
+
+.palmares-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    margin: 20px 0 40px;
+}
+
+.palmares-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 10px;
+    padding: 16px 20px;
+    min-width: 140px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.palmares-item:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-3px);
+}
+
+.palmares-item .palm-year {
+    font-family: "Bitcount Grid Single", sans-serif;
+    font-size: 32px;
+    color: yellow;
+}
+
+.palmares-item .palm-piloto {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin-top: 4px;
+}
+
+.palmares-item .palm-coche {
+    font-size: 12px;
+    color: #c8c8c8;
+    text-align: center;
+    margin-top: 2px;
+}
+
+/* ---- Footer ---- */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 22px 0;
+    margin-top: 30px;
+    border-top: 1px solid #2a2a2a;
+    font-size: 14px;
+    color: #c8c8c8;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: yellow;
+    font-family: "Bitcount Grid Single", sans-serif;
+    font-size: 16px;
+    transition: opacity 0.2s;
+}
+
+footer a:hover {
+    opacity: 0.75;
+}
+
+.logo-facebook {
+    width: 22px;
+    vertical-align: middle;
+}
+
+
+/* ============================================
+   RESPONSIVE — MÓVIL (max-width: 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+
+    body {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+
+    h2 {
+        font-size: 26px;
+        margin: 18px 0 12px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    /* Header en columna */
+    .header-top {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0 0;
+    }
+
+    .header-logo {
+        width: 70px;
+        height: 55px;
+    }
+
+    .header-dtm-logo {
+        width: 55px;
+        height: 42px;
+    }
+
+    .breadcrumb {
+        font-size: 13px;
+        padding: 8px 0;
+    }
+
+    /* Banner más pequeño */
+    .banner {
+        max-height: 180px;
+        object-position: center 30%;
+    }
+
+    /* Historia en columna */
+    .historia-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .historia-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        min-width: unset;
+    }
+
+    .stat-box {
+        flex: 1 1 130px;
+        padding: 10px 12px;
+    }
+
+    .stat-box .stat-num {
+        font-size: 26px;
+    }
+
+    /* Coches en columna */
+    .coches-grid {
+        flex-direction: column;
+    }
+
+    .coche-card {
+        max-width: 100%;
+    }
+
+    .coche-card img {
+        height: 160px;
+    }
+
+    /* Pilotos más compactos */
+    .piloto-card {
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .piloto-numero {
+        font-size: 34px;
+        min-width: 44px;
+    }
+
+    .piloto-info h3 {
+        font-size: 18px;
+    }
+
+    /* Palmarés con scroll horizontal */
+    .palmares-row {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 10px;
+        gap: 10px;
+    }
+
+    .palmares-item {
+        min-width: 120px;
+        flex-shrink: 0;
+        padding: 12px 14px;
+    }
+
+    .palmares-item .palm-year {
+        font-size: 24px;
+    }
+
+    .palmares-item .palm-piloto {
+        font-size: 12px;
+    }
+
+    .palmares-item .palm-coche {
+        font-size: 11px;
+    }
+
+    /* Botón hamburguesa visible */
+    .nav-toggle-marca {
+        display: block;
+        align-self: flex-end;
+        margin: 6px 0;
+    }
+
+    /* Nav de marca colapsada */
+    #marcaNav {
+        display: none;
+        width: 100%;
+        background-color: #111;
+        border-radius: 8px;
+        padding: 10px 14px;
+        margin-bottom: 8px;
+    }
+
+    #marcaNav.open {
+        display: block;
+    }
+
+    .marca-nav-links {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+        padding: 8px 0 4px;
+    }
+
+    .marca-nav-links a {
+        font-size: 17px;
+        padding: 6px 0;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+        padding: 16px 0;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+}

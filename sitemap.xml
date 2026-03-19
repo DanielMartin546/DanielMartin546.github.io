@@ -5,38 +5,57 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+  <!-- Inicio -->
+  <url>
+    <loc>https://danielmartin546.github.io/</loc>
+    <lastmod>2025-03-16</lastmod>
+    <priority>1.00</priority>
+  </url>
 
+  <!-- Fabricantes -->
+  <url>
+    <loc>https://danielmartin546.github.io/audi/</loc>
+    <lastmod>2025-03-16</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://danielmartin546.github.io/bmw/</loc>
+    <lastmod>2025-03-16</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://danielmartin546.github.io/mercedes/</loc>
+    <lastmod>2025-03-16</lastmod>
+    <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://danielmartin546.github.io/opel/</loc>
+    <lastmod>2025-03-16</lastmod>
+    <priority>0.90</priority>
+  </url>
 
-<url>
-  <loc>https://danielmartin546.github.io/</loc>
-  <lastmod>2025-10-28T12:46:01+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://danielmartin546.github.io/audi.html</loc>
-  <lastmod>2025-10-28T12:46:01+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://danielmartin546.github.io/mercedes.html</loc>
-  <lastmod>2025-10-28T12:46:01+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://danielmartin546.github.io/bmw.html</loc>
-  <lastmod>2025-10-28T12:46:01+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://danielmartin546.github.io/opel.html</loc>
-  <lastmod>2025-10-28T12:46:01+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://danielmartin546.github.io/links.html</loc>
-  <lastmod>2025-10-28T12:46:01+00:00</lastmod>
-  <priority>0.70</priority>
-</url>
+  <!-- Silo: Motores -->
+  <url>
+    <loc>https://danielmartin546.github.io/Silo/motores.html</loc>
+    <lastmod>2025-03-16</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://danielmartin546.github.io/Silo/Tipos/tipos.html</loc>
+    <lastmod>2025-03-16</lastmod>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://danielmartin546.github.io/Silo/Tipos/disposiciones/disposicion.html</loc>
+    <lastmod>2025-03-16</lastmod>
+    <priority>0.60</priority>
+  </url>
 
+  <!-- Otros -->
+  <url>
+    <loc>https://danielmartin546.github.io/links-compa%C3%B1eros/</loc>
+    <lastmod>2025-03-16</lastmod>
+    <priority>0.50</priority>
+  </url>
 
 </urlset>

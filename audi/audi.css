@@ -1,65 +1,15 @@
-body{
-    color: white;
-    background-color: black;
-    width: 80%;
-    margin: auto;
-}
-img{
-    width: 100%;
-}
-h1{
-    text-align: center;
-    color: red;
-    font-family: "Bitcount Grid Single";
-    font-size: 80px;
-    font-variant: small-caps;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-}
-h2{
-    text-align: center;
-    font-family: "Bitcount Grid Single";
-    font-size: 45px;
-}
-h3{
-    text-align: center;
-    font-family: "Bitcount Grid Single";
-    font-size: 30px;
-}
-nav{
-    font-size: 0;
-}
-li{
-    display: inline-block;
-    width: calc(100%/2);
-    padding: 0;
-    margin: auto;
-    text-align: center;
-    font-size: 16px;
-    vertical-align: top;
-    list-style: none;
-}
-ul{
-    text-align: center;
-    margin: auto;
-}
-ol{
-    font-size: 0;
-    text-align: center;
-    margin: auto;
-    list-style: none;
-}
-p{
-    font-size: 17px;
-    font-family: sans-serif;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-.logo-facebook{
-    width: 20px;
-}
-.titulolista{
-    font-size: 50px;
-}
+/* Audi — importa la base y sobreescribe el color de acento */
+@import url("../marca-base.css");
+
+/* Color de Audi: rojo */
+h1 { color: #e0001a; }
+h3 { color: #e0001a; }
+.stat-box { border-left-color: #e0001a; }
+.stat-box .stat-num { color: #e0001a; }
+.palmares-item .palm-year { color: #e0001a; }
+.coche-card-body .years { color: #e0001a; }
+.piloto-info .piloto-titulo { color: #e0001a; }
+.breadcrumb a { color: #e0001a; }
+.marca-nav-links a:hover { color: #e0001a; }
+header { border-bottom-color: #e0001a; }
+.silo-prose-section h3 { color: #e0001a; }

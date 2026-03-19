@@ -1,59 +1,15 @@
-body{
-    color: white;
-    font-family: "Bitcount Grid Single";
-}
-h1{
-    text-align: center;
-    color: red;
-    font-size: 80px;
-    font-variant: small-caps;
-    word-spacing: 5px;
-    letter-spacing: 2px;
-}
-h2{
-    text-align: center;
-    font-size: 45px;
-}
-h3{
-    text-align: center;
-    font-size: 30px;
-}
-body{
-    background-color: black;
-}
-nav{
-    font-size: 0;
-}
-li{
-    display: inline-block;
-    width: calc(100%/2);
-    padding: 0;
-    margin: auto;
-    text-align: center;
-    font-size: 16px;
-    vertical-align: top;
-    list-style: none;
-}
-ul{
-    text-align: center;
-    margin: auto;
-}
-ol{
-    font-size: 0;
-    text-align: center;
-    margin: auto;
-    list-style: none;
-}
-p{
-    font-size: 17px;
-}
-a{
-    text-decoration: none;
-    color: white;
-}
-.logo-facebook{
-    width: 20px;
-}
-.titulolista{
-    font-size: 50px;
-}
+/* Mercedes — importa la base y sobreescribe el color de acento */
+@import url("../marca-base.css");
+
+/* Color de Mercedes: plata */
+h1 { color: #c0c0c0; }
+h3 { color: #c0c0c0; }
+.stat-box { border-left-color: #c0c0c0; }
+.stat-box .stat-num { color: #c0c0c0; }
+.palmares-item .palm-year { color: #c0c0c0; }
+.coche-card-body .years { color: #c0c0c0; }
+.piloto-info .piloto-titulo { color: #c0c0c0; }
+.breadcrumb a { color: #c0c0c0; }
+.marca-nav-links a:hover { color: #c0c0c0; }
+header { border-bottom-color: #c0c0c0; }
+.silo-prose-section h3 { color: #c0c0c0; }
