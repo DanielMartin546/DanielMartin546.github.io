@@ -94,7 +94,7 @@ header {
 }
 
 .breadcrumb .sep {
-    color: #888888; /* Ajustado de #444 a #888 para contraste AA (5.92:1 sobre negro) */
+    color: #888888;
 }
 
 .breadcrumb .current {

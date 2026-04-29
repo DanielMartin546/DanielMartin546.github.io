@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-/* ── Accesibilidad: enlace de salto al contenido principal ── */
 .skip-link {
     position: absolute;
     top: -100%;
@@ -24,16 +23,12 @@
     top: 0;
 }
 
-/* ── Accesibilidad: foco visible para todos los elementos interactivos ── */
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
-    outline: 3px solid yellow;
-    outline-offset: 3px;
     border-radius: 3px;
 }
 
-/* ── Accesibilidad: texto de solo lectura para tecnologías de asistencia ── */
 .sr-only {
     position: absolute;
     width: 1px;
