@@ -1,17 +1,19 @@
 @import url("../marca-base.css");
 
-h1 { color: #1c69d4; }
-h3 { color: #1c69d4; }
-.stat-box { border-left-color: #1c69d4; }
-.stat-box .stat-num { color: #1c69d4; }
-.palmares-item .palm-year { color: #1c69d4; }
-.coche-card-body .years { color: #1c69d4; }
-.piloto-info .piloto-titulo { color: #1c69d4; }
-.breadcrumb a { color: #1c69d4; }
-.marca-nav-links a:hover { color: #1c69d4; }
-header { border-bottom-color: #1c69d4; }
-.silo-prose-section h3 { color: #1c69d4; }
+/* Color BMW ajustado de #1c69d4 a #4D8FE8 para contraste AA (6.41:1 sobre negro) */
+h1 { color: #4D8FE8; }
+h3 { color: #4D8FE8; }
+.stat-box { border-left-color: #4D8FE8; }
+.stat-box .stat-num { color: #4D8FE8; }
+.palmares-item .palm-year { color: #4D8FE8; }
+.coche-card-body .years { color: #4D8FE8; }
+.piloto-info .piloto-titulo { color: #4D8FE8; }
+.breadcrumb a { color: #4D8FE8; }
+.marca-nav-links a:hover { color: #4D8FE8; }
+header { border-bottom-color: #4D8FE8; }
+.silo-prose-section h3 { color: #4D8FE8; }
 
+/* ── Accesibilidad: enlace de salto al contenido principal ── */
 .skip-link {
     position: absolute;
     top: -100%;
@@ -28,12 +30,16 @@ header { border-bottom-color: #1c69d4; }
 }
 .skip-link:focus { top: 0; }
 
+/* ── Accesibilidad: foco visible ── */
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
+    outline: 3px solid yellow;
+    outline-offset: 3px;
     border-radius: 3px;
 }
 
+/* ── Accesibilidad: texto solo para lectores de pantalla ── */
 .sr-only {
     position: absolute;
     width: 1px;

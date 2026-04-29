@@ -12,6 +12,7 @@ h3 { color: #c0c0c0; }
 header { border-bottom-color: #c0c0c0; }
 .silo-prose-section h3 { color: #c0c0c0; }
 
+/* ── Accesibilidad: enlace de salto al contenido principal ── */
 .skip-link {
     position: absolute;
     top: -100%;
@@ -28,12 +29,16 @@ header { border-bottom-color: #c0c0c0; }
 }
 .skip-link:focus { top: 0; }
 
+/* ── Accesibilidad: foco visible ── */
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
+    outline: 3px solid yellow;
+    outline-offset: 3px;
     border-radius: 3px;
 }
 
+/* ── Accesibilidad: texto solo para lectores de pantalla ── */
 .sr-only {
     position: absolute;
     width: 1px;

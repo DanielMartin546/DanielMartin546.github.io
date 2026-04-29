@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* ── Accesibilidad: enlace de salto al contenido principal ── */
 .skip-link {
     position: absolute;
     top: -100%;
@@ -23,12 +24,16 @@
     top: 0;
 }
 
+/* ── Accesibilidad: foco visible para todos los elementos interactivos ── */
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
+    outline: 3px solid yellow;
+    outline-offset: 3px;
     border-radius: 3px;
 }
 
+/* ── Accesibilidad: texto de solo lectura para tecnologías de asistencia ── */
 .sr-only {
     position: absolute;
     width: 1px;
@@ -252,7 +257,7 @@ footer {
 }
 
 .breadcrumb .sep {
-    color: #555;
+    color: #888888; /* Ajustado de #555 a #888 para contraste AA (5.92:1 sobre negro) */
 }
 
 .breadcrumb .current {
