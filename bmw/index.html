@@ -43,6 +43,7 @@
     </script>
 </head>
 <body>
+    <a class="skip-link" href="#contenido-principal">Saltar al contenido principal</a>
 
 <header>
     <div class="header-top">
@@ -51,11 +52,11 @@
         <img class="header-dtm-logo" src="../Imagenes/DTM_logo.png" alt="Logo DTM">
     </div>
 
-    <nav id="marcaNav">
+    <nav id="marcaNav" aria-label="Migas de pan y navegación">
         <div class="breadcrumb">
             <a href="../index.html">Inicio</a>
-            <span class="sep">/</span>
-            <span class="current">BMW</span>
+            <span class="sep" aria-hidden="true">/</span>
+            <span class="current" aria-current="page">BMW</span>
         </div>
         <div class="marca-nav-links">
             <a href="../audi/index.html">Audi</a>
@@ -66,7 +67,7 @@
     </nav>
 </header>
 
-<main>
+<main id="contenido-principal">
 
     <section aria-label="Historia de BMW">
         <h2>Historia en el DTM</h2>
